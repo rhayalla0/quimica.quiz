@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Química</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Estilos extras para química */
+    .quimica-intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .quimica-intro img {
+      width: 120px;
+      filter: drop-shadow(0 0 6px #00bfff);
+      margin-bottom: 20px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        filter: drop-shadow(0 0 6px #00bfff);
+      }
+      to {
+        filter: drop-shadow(0 0 20px #00e0ff);
+      }
+    }
+
+    .quimica-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #111111;
+      border-radius: 12px;
+      padding: 20px;
+      width: 260px;
+      box-shadow:
+        0 0 15px #00bfff;
+      transition: transform 0.3s ease;
+      cursor: default;
+      color: #00bfff;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow:
+        0 0 25px #00e0ff,
+        0 0 40px #00d4ff;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      text-shadow:
+        0 0 8px #00bfff;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #00d4ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quimica</h1>
+    <nav>
+      <a href="index.html" class="active">Início</a>
+      <a href="curiosidades.html">Curiosidades</a>
+      <a href="sobre.html">Sobre Mim</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="quimica-intro">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Molecular_orbital_diagram.svg" alt="Molécula" />
+      <h2>Bem-vindo ao universo da Química!</h2>
+      <p>Explore meus projetos e conteúdos sobre ciência, tecnologia e química.</p>
+    </section>
+
+    <section>
+      <h3>O que você encontrará aqui</h3>
+      <div class="quimica-cards">
+        <div class="card">
+          <h3>Experimentos Simples</h3>
+          <p>Aprenda com vídeos e textos práticos para entender as reações químicas do dia a dia.</p>
+        </div>
+
+        <div class="card">
+          <h3>Quizzes Interativos</h3>
+          <p>Teste seus conhecimentos em química com quizzes que explicam as respostas.</p>
+        </div>
+
+        <div class="card">
+          <h3>Projetos Web</h3>
+          <p>Veja meus projetos de programação focados em educação científica.</p>
+        </div>
+
+        <div class="card">
+          <h3>Consultoria Científica</h3>
+          <p>Ofereço ajuda e consultoria para projetos relacionados à química.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="text-align:center; margin-top: 40px;">
+      <button onclick="window.location.href='projetos.html'">Explore os Projetos</button>
+      <button onclick="window.location.href='quiz.html'">Faça um Quiz de Química</button>
+    </section>
+  </main>
+</body>
+</html>
